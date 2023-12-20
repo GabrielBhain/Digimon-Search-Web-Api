@@ -1,0 +1,72 @@
+.card {
+    position: absolute;
+    max-width: 360px;
+    margin-top: 5%;
+    width: 360px;
+    height: 520px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to top, rgba(48, 179, 252, 1), rgba(140, 213, 255, 0.1));
+    transform: perspective(35em) rotateX(18deg);
+}
+
+.i-logo__digimons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.i-img__Digimon {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.i-img__Digimon img {
+    height: 250px;
+    animation: pulseanimation 1s infinite;
+
+}
+
+/* @keyframes: Permite criar sequências de animação */
+@keyframes pulseanimation {
+
+    /* Seletores dos quadros em percentual (%) */
+    0% {
+        transform: scale(1);
+
+    }
+
+    50% {
+        transform: scale(1.1);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+#t-name__Digimon {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    font-size: 30px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 22px;
+
+}
