@@ -33,4 +33,4 @@ Desenvolvemos uma página de busca de Digimons, incorporando conceitos práticos
 
 ---
 
-<div align="center">Feito por <a href="https://github.com/SeuUsuario">Seu Nome 🕵🏻</a>.</div>
+<div align="center">Feito por <a href="https://github.com/GabrielBhain">Gabriel Ferreira 🕵🏻</a>.</div>
