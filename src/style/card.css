@@ -3,7 +3,7 @@
     max-width: 360px;
     margin-top: 5%;
     width: 360px;
-    height: 520px;
+    height: 600px;
     padding: 10px;
     border-radius: 20px;
     background: linear-gradient(to top, rgba(48, 179, 252, 1), rgba(140, 213, 255, 0.1));
@@ -53,7 +53,7 @@
     }
 }
 
-#t-name__Digimon {
+#name__Digimon {
     user-select: none;
     display: flex;
     align-items: center;
@@ -69,4 +69,46 @@
     font-weight: bold;
     padding: 8px 22px;
 
+}
+
+
+.id-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 8px;
+    z-index: 1;
+}
+
+#digimonId {
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+#digimonId,
+button {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    font-size: 12px;
+    z-index: 1;
+}
+
+.info-digimons {
+    margin-top: 8px;
+}
+
+.a-info__column {
+    margin: 4px 0;
 }

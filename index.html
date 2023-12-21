@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class=container>
-        <div class=container-bg>
+    <div class="container">
+        <div class="container-bg">
             <div class="card">
                 <section class="i-logo__digimons">
                     <img src="src/assets/logo.png" alt="Logo Digimon" height="70px">
@@ -52,7 +52,11 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="id-input">
+                        <label for="digimonId">Digite o ID do Digimon:</label>
+                        <input type="number" id="digimonId" min="1">
+                        <button onclick="changeDigimon()">Alterar Digimon</button>
+                    </div>
                 </section>
             </div>
         </div>

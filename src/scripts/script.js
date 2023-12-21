@@ -1,10 +1,10 @@
+let digimons; // Declare a variável aqui
 
 // Chamada API digimons
 async function getDigimonsAPI() {
     const response = await fetch("https://digitalinnovationone.github.io/api-digimon/api/digimon.json");
 
     return await response.json();
-
 }
 
 //Filtro/Busca dos digimons
@@ -15,7 +15,6 @@ async function filtroDigimons(digimonList, digimonId) {
 }
 
 // Renderizador
-
 async function renderDigimons(digimon) {
     const imgDigimonElement = document.getElementById("img__Digimon");
     imgDigimonElement.src = digimon.image;
@@ -32,11 +31,28 @@ async function renderDigimons(digimon) {
     defDigimonElement.style.width = digimon.DEF + "%";
 }
 
+// Função para alterar o Digimon com base no novo ID inserido pelo usuário
+async function changeDigimon() {
+    const newDigimonId = document.getElementById("digimonId").value;
+
+    if (digimons && newDigimonId !== "") {
+        const newDigimon = await filtroDigimons(digimons, parseInt(newDigimonId));
+
+        if (newDigimon) {
+            await renderDigimons(newDigimon);
+        } else {
+            alert("Digimon não encontrado com o ID fornecido.");
+        }
+    } else {
+        alert("Por favor, insira um ID válido.");
+    }
+}
+
 // Main
 async function main() {
-    const digimons = await getDigimonsAPI();
+    digimons = await getDigimonsAPI(); // Atribua o valor da variável aqui
 
-    const chooseDigimons = await filtroDigimons(digimons, 3);
+    const chooseDigimons = await filtroDigimons(digimons, 1);
 
     await renderDigimons(chooseDigimons);
 }

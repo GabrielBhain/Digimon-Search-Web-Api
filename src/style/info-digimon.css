@@ -47,7 +47,7 @@
 
 .d-atk__int {
     position: absolute;
-    background-color: rgba(48, 179, 252, 1);
+    background-color: rgb(255, 0, 0);
     height: 100%;
     width: 0;
     border-radius: 35px;
